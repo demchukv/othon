@@ -266,6 +266,7 @@
   flex-direction: row;
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__privacy-link:hover,
 .footer__privacy-link:active,
@@ -290,6 +291,7 @@
   width: 30px;
   height: 30px;
   fill: var(--color-white);
+  transition: all 0.25s ease;
 }
 .footer__social-item:hover,
 .footer__social-item:active,

@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/TTF/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
-  --font-family: 'Satoshi-Regular', sans-serif;
+  --font-family: 'Satoshi', sans-serif;
 
   --color-orange-red: #f2683c;
   --color-white: #ffffff;
