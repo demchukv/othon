@@ -38,7 +38,8 @@
 }
 .head-nav__link:hover,
 .head-nav__link:active,
-.head-nav__link:focus {
+.head-nav__link:focus,
+.head-nav__link.active {
   color: var(--color-orange-red);
 }
 .head-btn {
