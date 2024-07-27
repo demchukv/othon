@@ -52,6 +52,10 @@
   width: 41px;
   height: 35px;
 }
+.about-video__sound-btn:hover .about-video__icon,
+.about-video__sound-btn:active .about-video__icon {
+  fill: var(--color-orange-red);
+}
 .story {
   display: flex;
   flex-direction: row;
