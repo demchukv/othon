@@ -1,0 +1,109 @@
+/* services section */
+.services {
+  margin-bottom: 100px;
+}
+.services-title {
+  border-top: 1px solid var(--color-border);
+  margin-bottom: 100px;
+}
+.services-info {
+  display: flex;
+  flex-direction: row;
+}
+.services-info__cont {
+  width: 460px;
+  margin-right: 117px;
+  flex-shrink: 0;
+}
+.services-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.services-info__item {
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  padding-bottom: 3px;
+  opacity: 0.32;
+  border-bottom: 1px solid transparent;
+  transition: opacity 0.5s ease, border 0.5s ease;
+}
+.services-info__item a,
+.services-info__item a:visited {
+  color: var(--color-dark-blue);
+}
+.item-active {
+  opacity: 1;
+  border-bottom: 1px solid var(--color-orange-red);
+}
+.services-info__slider {
+  position: relative;
+  width: 357px;
+  height: 735px;
+  margin-right: 48px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.services-info__slides {
+  position: relative;
+}
+.services-info__slide {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+.slide-active {
+  z-index: 2;
+}
+.services-info__image {
+  border-radius: 20px;
+}
+.services-info__card-link {
+  position: absolute;
+  bottom: 33px;
+  right: 33px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  border-radius: 100%;
+  background-color: var(--color-white);
+  flex-shrink: 0;
+  fill: var(--color-orange-red);
+  transition: all 0.25s ease;
+}
+.services-info__card-link:hover,
+.services-info__card-link:active,
+.services-info__card-link:focus {
+  background-color: var(--color-orange-red);
+  fill: var(--color-white);
+}
+
+.services-info__text {
+  flex-shrink: 1;
+}
+.services-info__text-list {
+  position: relative;
+  width: 779px;
+}
+.services-info__text-item {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+.text-active {
+  visibility: visible;
+  opacity: 1;
+}
+.services-info__text-item p {
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}

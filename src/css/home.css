@@ -1,0 +1,98 @@
+/* Home section */
+.home {
+  padding: 0 20px;
+  background-image: url(../img/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-bottom: 100px;
+}
+.home-title {
+  font-size: 60px;
+  line-height: 1.12;
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 259px;
+  padding-bottom: 188px;
+}
+.home-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 39px;
+  row-gap: 20px;
+  column-gap: 19px;
+}
+.home-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 27px;
+  width: 588px;
+  height: 280px;
+  padding: 35px;
+  background: var(--color-dark-blue);
+  overflow: hidden;
+}
+.item-road:hover {
+  background: url(../img/cards/road.jpg) no-repeat;
+}
+.item-transportation:hover {
+  background: url(../img/cards/transportation.jpg) no-repeat;
+}
+.item-design:hover {
+  background: url(../img/cards/design.jpg) no-repeat;
+}
+.item-water:hover {
+  background: url(../img/cards/water.jpg) no-repeat;
+}
+.item-bridges:hover {
+  background: url(../img/cards/bridges.jpg) no-repeat;
+}
+.item-construction:hover {
+  background: url(../img/cards/construction.jpg) no-repeat;
+}
+.home-list__text {
+  position: relative;
+  font-size: 26px;
+  color: var(--color-white);
+  z-index: 1;
+}
+.home-list_link {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 23px;
+  z-index: 1;
+}
+.home-list__icon {
+  fill: var(--color-white);
+  width: 23px;
+  height: 23px;
+}
+.zoom-in {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    background-size: cover;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.zoom-in {
+  &:focus,
+  &:hover {
+    &::after {
+      transform: scale(1.1);
+    }
+  }
+}
