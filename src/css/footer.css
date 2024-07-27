@@ -258,7 +258,7 @@
 .footer__created-link:focus span {
   opacity: 1;
 }
-.footer__created .footer__social {
+.footer__social {
   display: flex;
   flex-direction: row;
   gap: 23px;
