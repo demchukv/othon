@@ -17,6 +17,10 @@
   --color-border: rgba(24, 48, 100, 0.2);
   --color-border-light: rgba(255, 255, 255, 0.2);
 
+  --desktop: 1920px;
+  --tablet: 768px;
+  --mobile: 375px;
+
   scroll-behavior: smooth;
 }
 
@@ -27,7 +31,7 @@ body {
   letter-spacing: 0.01em;
   color: var(--color-dark-blue);
   background-color: var(--color-white);
-  min-width: 320px;
+  min-width: var(--mobile);
 }
 h1,
 h2,
@@ -68,7 +72,7 @@ button {
 }
 
 .container {
-  width: 1920px;
+  width: var(--desktop);
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -95,4 +99,18 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: var(--mobile);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .section__title {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
 }
