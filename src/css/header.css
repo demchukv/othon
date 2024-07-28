@@ -15,7 +15,6 @@
   padding-top: 37px;
   padding-bottom: 34px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  overflow: hidden;
 }
 .head-logo {
   width: 200px;
@@ -211,7 +210,7 @@
   .modal-open {
     max-height: 100vh;
     overflow-y: hidden;
-    position: fixed;
+    /* position: fixed; */
   }
   .modal-open main,
   .modal-open footer {
