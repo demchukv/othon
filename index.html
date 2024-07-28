@@ -8,90 +8,119 @@
     <link rel="icon" href="/othon/favicon.svg" type="image/x-icon" />
     <title>OTHON</title>
     <script type="module" crossorigin src="/othon/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/othon/assets/index-036899b5.css">
+    <link rel="stylesheet" href="/othon/assets/index-8e32425d.css">
   </head>
   <body>
     <header class="header">
-  <div class="container head">
+  <div class="container head" id="head">
+    <div class="head-mobile-bg" id="menuBg"></div>
     <div class="head-logo">
       <svg width="200" height="35" class="head-logo__icon">
-        <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-logo"></use>
+        <use xlink:href="/othon/assets/icons-c4261127.svg#icon-logo"></use>
       </svg>
     </div>
-    <nav class="head-nav">
-      <ul class="head-nav__list">
-        <li class="head-nav__item">
-          <a href="#home" class="head-nav__link">Home</a>
-        </li>
-        <li class="head-nav__item">
-          <a href="#about" class="head-nav__link">About</a>
-        </li>
-        <li class="head-nav__item">
-          <a href="#services" class="head-nav__link">Services</a>
-        </li>
-        <li class="head-nav__item">
-          <a href="#careers" class="head-nav__link">Careers</a>
-        </li>
-      </ul>
+
+    <button
+      class="head-nav__open-btn"
+      type="button"
+      id="openMenu"
+      title="Open Menu"
+    >
+      <svg width="28" height="28" class="head-nav__open-icon">
+        <use xlink:href="/othon/assets/icons-c4261127.svg?56778#icon-open"></use>
+      </svg>
+    </button>
+    <button
+      class="head-nav__close-btn hidden"
+      type="button"
+      id="closeMenu"
+      title="Close Menu"
+    >
+      <svg width="28" height="28" class="head-nav__close-icon">
+        <use xlink:href="/othon/assets/icons-c4261127.svg?56778#icon-close"></use>
+      </svg>
+    </button>
+
+    <nav class="head-nav" id="menu">
+      <div class="head-nav__inner">
+        <ul class="head-nav__list">
+          <li class="head-nav__item">
+            <a href="#home" class="head-nav__link">Home</a>
+          </li>
+          <li class="head-nav__item">
+            <a href="#about" class="head-nav__link">About</a>
+          </li>
+          <li class="head-nav__item">
+            <a href="#services" class="head-nav__link">Services</a>
+          </li>
+          <li class="head-nav__item">
+            <a href="#careers" class="head-nav__link">Careers</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <a href="#contact-us" class="head-btn">Contact Us</a>
+
+    <a href="#contact-us" class="head-btn" id="contactBtn">Contact Us</a>
   </div>
 </header>
 
     <main>
       <section class="section" id="home">
   <div class="container home">
-    <h1 class="home-title">Integrity Innovation Dedication</h1>
-    <ul class="home-list">
-      <li class="home-list__item zoom-in item-road">
-        <p class="home-list__text">Highways &<br />Roads</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="home-list__item zoom-in item-transportation">
-        <p class="home-list__text">Transportation<br />Planning</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="home-list__item zoom-in item-design">
-        <p class="home-list__text">Design<br />Build Services</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="home-list__item zoom-in item-water">
-        <p class="home-list__text">Water</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="home-list__item zoom-in item-bridges">
-        <p class="home-list__text">Bridges</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="home-list__item zoom-in item-construction">
-        <p class="home-list__text">Construction<br />Services</p>
-        <a class="home-list_link" href="#">
-          <svg width="23" height="23" class="home-list__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-link"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="home-inner">
+      <h1 class="home-title">Integrity Innovation Dedication</h1>
+
+      <ul class="home-list">
+        <li class="home-list__item zoom-in item-road">
+          <p class="home-list__text">Highways &<br />Roads</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="home-list__item zoom-in item-transportation">
+          <p class="home-list__text">Transportation<br />Planning</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="home-list__item zoom-in item-design">
+          <p class="home-list__text">Design<br />Build Services</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="home-list__item zoom-in item-water">
+          <p class="home-list__text">Water</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="home-list__item zoom-in item-bridges">
+          <p class="home-list__text">Bridges</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="home-list__item zoom-in item-construction">
+          <p class="home-list__text">Construction<br />Services</p>
+          <a class="home-list_link" href="#">
+            <svg width="23" height="23" class="home-list__icon">
+              <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-link"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -128,14 +157,14 @@
     <div class="about-video">
       <button type="button" class="about-video__sound-btn" id="sound-btn">
         <svg width="41" height="35" class="about-video__icon">
-          <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-sound" id="sound-icon"></use>
+          <use xlink:href="/othon/assets/icons-c4261127.svg#icon-sound" id="sound-icon"></use>
         </svg>
       </button>
     </div>
   </div>
   <div class="container story">
     <div class="story-history">
-      <h2 class="section__title">Our Story (history and legacy):</h2>
+      <h2 class="section__title our_story">Our Story (history and legacy):</h2>
       <div>
         <h3 class="story-subtitle">
           OTHON is recognized as a multi-discipline civil engineering firm. It
@@ -145,7 +174,7 @@
         <div class="story-images">
           <img
             class="story-image"
-            src="/othon/assets/story-1-44b27881.jpg"
+            src="/othon/assets/story-1-sm-96e8fc1b.jpg"
             alt="story image"
             width="435"
             height="435"
@@ -153,7 +182,7 @@
           />
           <img
             class="story-image"
-            src="/othon/assets/story-2-198fc200.jpg"
+            src="/othon/assets/story-2-sm-2e2d771c.jpg"
             alt="story image"
             width="432"
             height="435"
@@ -164,7 +193,7 @@
     </div>
     <div class="story-legacy">
       <svg width="53" height="53" class="story-legacy__icon">
-        <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-globe"></use>
+        <use xlink:href="/othon/assets/icons-c4261127.svg#icon-globe"></use>
       </svg>
       <h3 class="story-subtitle">
         Today OTHON is an award-winning company with over 100 employees.
@@ -206,7 +235,7 @@
         </p>
         <a href="#" class="story-info__card-link">
           <svg width="18" height="18" class="story-info__card-icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-right"></use>
+            <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </div>
@@ -331,7 +360,7 @@
         </ul>
         <a href="#" class="services-info__card-link">
           <svg width="18" height="18" class="services-info__card-icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-right"></use>
+            <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </div>
@@ -461,20 +490,20 @@
                 >List Job Openings
               </a>
               <svg width="18" height="18" class="careers__link-icon">
-                <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-right"></use>
+                <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-right"></use>
               </svg>
             </div>
             <div class="careers__links-item">
               <a class="careers__link" href="#" target="_blank">Apply Now </a>
               <svg width="18" height="18" class="careers__link-icon">
-                <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-right"></use>
+                <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-right"></use>
               </svg>
             </div>
           </div>
         </div>
         <div class="careers__info">
           <svg width="53" height="53" class="careers__icon">
-            <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-globe"></use>
+            <use xlink:href="/othon/assets/icons-c4261127.svg#icon-globe"></use>
           </svg>
           <div class="careers__text">
             <p>
@@ -500,7 +529,7 @@
     <div class="container-inner footer-bg">
       <div class="footer__logo">
         <svg width="200" height="35.37" class="footer__logo-icon">
-          <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-logo"></use>
+          <use xlink:href="/othon/assets/icons-c4261127.svg#icon-logo"></use>
         </svg>
       </div>
       <div class="footer__top">
@@ -596,7 +625,7 @@
             <button type="submit" class="footer__form-btn">
               Send Message
               <svg class="footer__form-icon" width="12" height="12">
-                <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-arrow-right"></use>
+                <use xlink:href="/othon/assets/icons-c4261127.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </form>
@@ -727,27 +756,27 @@
             <div class="footer__social">
               <a href="#" target="_blank" class="footer__social-item">
                 <svg width="30" height="30" class="footer__social-icon">
-                  <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-facebook"></use>
+                  <use xlink:href="/othon/assets/icons-c4261127.svg#icon-facebook"></use>
                 </svg>
               </a>
               <a href="#" target="_blank" class="footer__social-item">
                 <svg width="30" height="30" class="footer__social-icon">
-                  <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-linkedin"></use>
+                  <use xlink:href="/othon/assets/icons-c4261127.svg#icon-linkedin"></use>
                 </svg>
               </a>
               <a href="#" target="_blank" class="footer__social-item">
                 <svg width="30" height="30" class="footer__social-icon">
-                  <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-youtube"></use>
+                  <use xlink:href="/othon/assets/icons-c4261127.svg#icon-youtube"></use>
                 </svg>
               </a>
               <a href="#" target="_blank" class="footer__social-item">
                 <svg width="30" height="30" class="footer__social-icon">
-                  <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-instagram"></use>
+                  <use xlink:href="/othon/assets/icons-c4261127.svg#icon-instagram"></use>
                 </svg>
               </a>
               <a href="#" target="_blank" class="footer__social-item">
                 <svg width="30" height="30" class="footer__social-icon">
-                  <use xlink:href="/othon/assets/icons-99b1db36.svg#icon-twitter"></use>
+                  <use xlink:href="/othon/assets/icons-c4261127.svg#icon-twitter"></use>
                 </svg>
               </a>
             </div>
