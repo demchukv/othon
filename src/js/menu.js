@@ -15,7 +15,6 @@ closeBtn.addEventListener('click', () => closeMenu());
 
 const openMenu = () => {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-  // const body = document.body;
   body.style.position = 'fixed';
   body.style.top = `-${scrollY}`;
 
@@ -24,7 +23,6 @@ const openMenu = () => {
   openBtn.classList.add('hidden');
   closeBtn.classList.remove('hidden');
   menuBg.classList.add('open');
-  // body.classList.add('modal-open');
   setTimeout(() => {
     menu.classList.add('open');
     contactBtn.classList.add('open');
@@ -42,7 +40,6 @@ const closeMenu = () => {
   openBtn.classList.remove('hidden');
   closeBtn.classList.add('hidden');
   menuBg.classList.remove('open');
-  // body.classList.remove('modal-open');
   menu.classList.remove('open');
   contactBtn.classList.remove('open');
 };
