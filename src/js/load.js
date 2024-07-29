@@ -1,8 +1,7 @@
 const target = document.querySelectorAll('.section, .footer');
-console.log(target);
+
 function handleIntersection(entries) {
   entries.map(entry => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add('loaded');
     } else {

@@ -1,11 +1,16 @@
 function updateSize() {
   let width = document.documentElement.clientWidth;
+
   // for desktop
   if (width > 768) {
+    console.log('for desktop');
     const sItems = document.querySelectorAll('.services-info__item');
     const sSlides = document.querySelectorAll('.services-info__slide');
     const sText = document.querySelectorAll('.services-info__text-item');
     let sCurrent = 0;
+    sText.forEach(item => {
+      item.style.background = '';
+    });
 
     sItems.forEach((item, index) => {
       item.addEventListener('click', e => {
@@ -48,6 +53,7 @@ function updateSize() {
 
     // for mobile
   } else {
+    console.log('for mobile');
     const prev = document.getElementById('prev-slide');
     const next = document.getElementById('next-slide');
     const sItems = document.querySelectorAll('.services-info__item');
@@ -57,9 +63,9 @@ function updateSize() {
     let index = 0;
     const total = sItems.length;
 
-    sSlides.forEach((item, index) => {
+    sSlides.forEach((item, idx) => {
       sText[
-        index
+        idx
       ].style.background = `linear-gradient(180deg, #18306c 0%, rgba(47, 93, 210, 0) 100%),     url(${item.children[0].src}) no-repeat center / cover`;
     });
 

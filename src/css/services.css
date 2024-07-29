@@ -93,6 +93,7 @@
 }
 .services-info__text-item {
   position: absolute;
+  display: block;
   width: 100%;
   visibility: hidden;
   opacity: 0;
