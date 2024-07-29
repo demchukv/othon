@@ -314,6 +314,7 @@
     background-color: var(--color-dark-blue);
     padding: 40px 20px;
     border-radius: 0;
+    border-top: 1px solid var(--color-border-light);
   }
   .footer__logo {
     margin-bottom: 90px;
