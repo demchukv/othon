@@ -3,7 +3,6 @@ function updateSize() {
 
   // for desktop
   if (width > 768) {
-    console.log('for desktop');
     const sItems = document.querySelectorAll('.services-info__item');
     const sSlides = document.querySelectorAll('.services-info__slide');
     const sText = document.querySelectorAll('.services-info__text-item');
@@ -53,7 +52,6 @@ function updateSize() {
 
     // for mobile
   } else {
-    console.log('for mobile');
     const prev = document.getElementById('prev-slide');
     const next = document.getElementById('next-slide');
     const sItems = document.querySelectorAll('.services-info__item');
