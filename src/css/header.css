@@ -78,12 +78,6 @@
 
 /* for mobile */
 @media screen and (max-width: 768px) {
-  .header {
-    position: fixed;
-  }
-  body {
-    padding-top: 83px;
-  }
   .head {
     padding-top: 33px;
     padding-bottom: 23px;
