@@ -93,9 +93,6 @@ function setSlide(sCurrent, index) {
   sItems[index].classList.add('item-active');
   sText[sCurrent].classList.remove('text-active');
   sText[index].classList.add('text-active');
-  // sText[index].animate([{ opacity: 1 }, { opacity: 0 }], {
-  //   duration: 400,
-  // });
 }
 
 updateSize();

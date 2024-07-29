@@ -107,7 +107,9 @@
   letter-spacing: 0.01em;
   margin-bottom: 24px;
 }
-
+.services-info__control {
+  display: none;
+}
 /* for mobile */
 @media screen and (max-width: 768px) {
   .services {
@@ -227,7 +229,7 @@
   }
 
   .services-info__text {
-    position: static;
+    position: relative;
     background-color: var(--color-dark-blue);
     border-radius: 13px;
   }
