@@ -111,6 +111,9 @@
 .services-info__control {
   display: none;
 }
+.cl-text {
+  display: none;
+}
 /* for mobile */
 @media screen and (max-width: 768px) {
   .services {
